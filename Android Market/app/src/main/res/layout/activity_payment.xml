@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".Activities.StoreActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:background="@color/dark_color"
+            android:layout_height="?attr/actionBarSize"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/back"
+                android:layout_weight="1"
+                android:id="@+id/back"
+                android:background="@drawable/selector"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Sipariş Ekranı"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/editSearch"
+                android:layout_weight="5"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/delete"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/delete"
+                android:background="@drawable/selector"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:isScrollContainer="false">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Sipariş Ödeme Türü"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2.6"
+            android:layout_gravity="center"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:text="Adres Seçimi"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Adres Ekle"
+                android:id="@+id/adAddress"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.1"
+                android:text="Adres Seçimi"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/add"
+            app:cardCornerRadius="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="@color/dark_color"
+                    android:text="Adres eklemeniz gerekmektedir.."
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Adres Ekle"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_light"
+                    android:background="@drawable/button_bg"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:id="@+id/danger"
+            android:textColor="#D00000"
+            android:text="Adres Eklemediniz.Bilgilerim kısmından ekleyiniz ya da adres ekle butonuna tıklayın"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Sipariş Notu"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:backgroundTint="#fff"
+                android:layout_height="wrap_content"
+                android:id="@+id/statement"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColorHint="#000" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:background="@drawable/selector_white"
+                android:layout_height="wrap_content"
+                android:text="Siparişi Gönder" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".Activities.StoreActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:background="@color/dark_color"
+            android:layout_height="?attr/actionBarSize"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/back"
+                android:layout_weight="1"
+                android:id="@+id/back"
+                android:background="@drawable/selector"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Market Sepetim"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/editSearch"
+                android:layout_weight="5"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/delete"
+                android:layout_weight="1"
+                android:id="@+id/delete"
+                android:background="@drawable/selector"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/deleteBasket"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/sepeti_bo_alt"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/text_light"
+                android:textSize="17sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:listitem="@layout/item_basket"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2.01"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/basketTotal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="Sepet Toplamı: 157 TL"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.01"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_baseline_verified_24"
+            android:text="Siparişi Onayla"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+</RelativeLayout>

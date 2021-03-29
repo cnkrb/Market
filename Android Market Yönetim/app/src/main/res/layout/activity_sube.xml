@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SubeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:background="@color/dark_color"
+            android:layout_height="?attr/actionBarSize"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/back"
+                android:layout_weight="1"
+                android:id="@+id/back"
+                android:background="@drawable/selector"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Şube"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/sube"
+                android:layout_weight="5"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/search"
+                android:src="@drawable/ic_baseline_search_24"
+                android:background="@drawable/selector"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/home_view"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/kategori"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Kategoriler"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/altkategori"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Alt Kategoriler"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/marka"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Markalar"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/urun"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Ürünler"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/stok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Stok"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/siparis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Siparişler"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/gecmis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Ürün ALım Geçmişi"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/rapor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Gün Sonu Raporu"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/hakkimda"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selectogreen"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Hakkımızda"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frame"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

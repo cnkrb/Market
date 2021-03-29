@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="14dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8.25"
+        android:background="@drawable/store_backround"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_weight="1.25"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/name_bg"
+            android:gravity="center"
+            android:text="Ad Soyad"
+            android:textColor="@color/text_light"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.75"
+            >
+
+            <ImageView
+                android:id="@+id/market"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:drawablePadding="3dp"
+                android:textStyle="bold"
+                android:text="20-30 dk"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:drawablePadding="3dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="Nabn sokak"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Markete Git"
+            android:layout_weight="1.25"
+            android:textAllCaps="false"
+            android:textColor="@color/text_light"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

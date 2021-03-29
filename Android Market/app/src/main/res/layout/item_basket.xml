@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5.2"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:id="@+id/patch"
+            android:adjustViewBounds="false"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:text="Cenk ürünü 400ml"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:lines="1"
+                android:id="@+id/name"
+                android:textColor="#000"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Ürün adet fiyatı: "
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="300 TL"
+                    android:textSize="15sp"
+                    android:id="@+id/adet"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Ürün toplamı: "
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="300 TL"
+                    android:textSize="15sp"
+                    android:id="@+id/price"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Ürün toplamı: 300 TL"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:src="@drawable/take_out"
+            android:background="@null"
+            android:id="@+id/delete"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="5x"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/x"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:src="@drawable/take_in"
+            android:background="@null"
+            android:id="@+id/add"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

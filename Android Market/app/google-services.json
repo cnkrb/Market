@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "88201351459",
+    "project_id": "market-dde2d",
+    "storage_bucket": "market-dde2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88201351459:android:71c1878080719f05523c96",
+        "android_client_info": {
+          "package_name": "com.cenk.marketsmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88201351459-r4m4f4cfv9vrh5o739e8vpufvj71kif7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh4eBo8mtvy6vtIlpItaeSOBJDAKwpvRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88201351459-r4m4f4cfv9vrh5o739e8vpufvj71kif7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
